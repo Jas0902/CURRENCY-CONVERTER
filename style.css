@@ -1,0 +1,93 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box; /* Important for layout consistency */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure it fills the full viewport */
+    background-image: url("currency.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+.container{
+    background-color: darkseagreen;
+    opacity: 0.8;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+form, input, select, button {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.select-container img {
+    height: 100%; /* match the container height */
+    aspect-ratio: 1 / 1; /* keep it square */
+    border-radius: 50%;
+}
+
+/* Ensure select/input define the container height */
+select, input {
+    height: 40px; /* example height */
+    padding: 0 0.5rem;
+    font-size: 1rem;
+}
+
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+button {
+    background-color: #5d1a7c; /* dark orange for contrast */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #863999; /* slightly lighter on hover */
+}
+
+
+.msg {
+    padding: 12px;
+    background: #e6f7ff;
+    color: #007bff;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #007bff;
+}
+
